@@ -20,6 +20,9 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "@typescript-eslint/ban-ts-comment": 0, //允许忽略错误
+    "@typescript-eslint/no-explicit-any": 0, // 允许 any 类型
+    "@typescript-eslint/explicit-module-boundary-types": 0, //形参允许 any
   },
 
   overrides: [
